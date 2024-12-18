@@ -336,7 +336,7 @@ class FlashList<T> extends React.PureComponent<
             ? { ...this.getTransform() }
             : { flex: 1, overflow: "hidden", ...this.getTransform() }
         }
-        {...this.props.overrideProps.stickyContainerProps}
+        {...this.props.overrideProps?.stickyContainerProps}
       >
         <ProgressiveListView
           {...restProps}
@@ -363,7 +363,7 @@ class FlashList<T> extends React.PureComponent<
 
               ...getContentContainerPadding(this.contentStyle, horizontal),
             },
-            ...this.props.overrideProps.scrollViewProps,
+            ...this.props.overrideProps?.scrollViewProps,
           }}
           forceNonDeterministicRendering
           renderItemContainer={this.itemContainer}

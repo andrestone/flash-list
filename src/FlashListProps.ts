@@ -292,7 +292,7 @@ export interface FlashListProps<TItem> extends ScrollViewProps {
   /**
    * For debugging and exception use cases, internal props will be overriden with these values if used
    */
-  overrideProps?: object;
+  overrideProps?: { stickyContainerProps?: any; scrollViewProps?: any };
 
   /**
    * Set this when offset is needed for the loading indicator to show correctly.
